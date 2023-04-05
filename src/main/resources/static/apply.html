@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VIP Bewerbung</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <form action="/apply" method="post">
+        <div class="formular">
+            <h1>Du möchtest dich bewerben?</h1>
+            <h2>Bitte fülle das Formular mit deinen Daten aus damit sich jemand mit dir in Verbindung setzen kann.</h2>
+            <div class="row">
+                <div class="item">
+                    <p>Dein Name:</p>
+                    <input class="input-small" type="text" name="name" placeholder="Marcel" required>
+                </div>
+                <div class="item">
+                    <p>Discord- Tag:</p>
+                    <input class="input-small" type="text" name="discordTag" placeholder="VIPMarcel#0001" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <p>Geburtstag:</p>
+                    <input class="input-small" type="date" name="birthday" required>
+                </div>
+                <div class="item">
+                    <p>Email Adresse:</p>
+                    <input class="input-small" type="email" name="email" placeholder="deineemail@provider.com" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <p>Deine Bewerbung:</p>
+                    <textarea class="input-big" name="text" placeholder="Uns interessiert natürlich auch warum du genau uns gewählt hast.." required></textarea>
+                </div>
+            </div>
+            <div class="button-section">
+                <button class="button-opend" type="submit">Bewerben</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
